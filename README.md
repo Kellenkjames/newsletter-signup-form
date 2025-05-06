@@ -1,1 +1,1 @@
-# newsletter-form
+# newsletter-signup-form
