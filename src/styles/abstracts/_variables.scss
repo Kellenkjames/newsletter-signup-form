@@ -1,0 +1,54 @@
+// TYPOGRAPHY
+$font-primary: 'Roboto', sans-serif;
+
+$font-body: 1.6rem; // 16px base
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+
+// COLOR TOKENS
+$white: #fff;
+$grey: #949494;
+$blue-800: #242742;
+$blue-700: #36384d;
+$red: #ff6155;
+$red-gradient: #ff6a3a;
+
+// COLOR ALIASES
+$color-bg: $blue-700;
+$color-text-primary: $blue-800;
+$color-text-secondary: $white;
+$color-btn-primary: $blue-800;
+$color-btn-hover: $red-gradient;
+$color-error: $red;
+
+// SPACING SCALE
+$space-0: 0;
+$space-100: 0.8rem; // 8px
+$space-200: 1.6rem; // 16px
+$space-300: 2.4rem; // 24px
+$space-400: 3.2rem; // 32px
+$space-500: 4rem; // 40px
+$space-600: 4.8rem; // 48px
+$space-800: 6.4rem; // 64px
+$space-900: 7.2rem; // 72px
+$space-1300: 10.4rem; // 104px
+
+// BOX SHADOW
+$box-shadow-card: 0px 15px 60px rgba(0, 0, 0, 0.25);
+
+// BORDER RADIUS
+$border-radius-container: 3.6rem;
+
+// BREAKPOINTS
+$breakpoint-sm: 600px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1440px;
+
+$breakpoints: (
+  sm: $breakpoint-sm,
+  md: $breakpoint-md,
+  lg: $breakpoint-lg,
+  xl: $breakpoint-xl,
+);
