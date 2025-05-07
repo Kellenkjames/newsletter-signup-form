@@ -14,6 +14,72 @@
     </title>
   </head>
   <body>
-    <main></main>
+    <main class="container">
+      <!-- Left Column -->
+      <article class="content">
+        <header class="content__heading">
+          <h1 class="content__heading-title">Stay updated!</h1>
+          <p class="content__heading-desc">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+        </header>
+
+        <ul class="content__list">
+          <li class="content__list-item">
+            <img
+              class="content__list-icon"
+              src="./assets/images/icon-list.svg"
+              alt=""
+            />
+            <span class="content__list-text">
+              Product discovery and building what matters
+            </span>
+          </li>
+          <li class="content__list-item">
+            <img
+              class="content__list-icon"
+              src="./assets/images/icon-list.svg"
+              alt=""
+            />
+            <span class="content__list-text">
+              Measuring to ensure updates are a success
+            </span>
+          </li>
+          <li class="content__list-item">
+            <img
+              class="content__list-icon"
+              src="./assets/images/icon-list.svg"
+              alt=""
+            />
+            <span class="content__list-text">And much more!</span>
+          </li>
+        </ul>
+
+        <form class="content__form" data-form-state="valid" novalidate>
+          <div class="form-control">
+            <label for="emailField">Email address:</label>
+            <input
+              type="email"
+              id="emailField"
+              name="emailField"
+              aria-invalid="false"
+            />
+            <span class="error-message" aria-live="polite"></span>
+          </div>
+          <button class="content__form-button" type="button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </article>
+
+      <!-- Right Column -->
+      <picture class="content__image">
+        <source
+          srcset="./assets/images/illustration-sign-up-desktop.svg"
+          media="(min-width: 768px)"
+        />
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+      </picture>
+    </main>
   </body>
 </html>
