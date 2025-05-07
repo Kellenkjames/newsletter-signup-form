@@ -1,0 +1,61 @@
+@use '../abstracts/variables';
+
+// ---------------------------------------------
+// TYPOGRAPHY MIXINS
+// ---------------------------------------------
+
+// Mixin: Desktop heading style (e.g. success modal, main headline)
+@mixin text-heading {
+  font-family: variables.$font-primary;
+  font-weight: variables.$font-weight-bold;
+  font-size: variables.$font-size-heading-desktop;
+  line-height: 1;
+}
+
+// Mixin: Mobile heading style override
+@mixin text-heading-lg {
+  font-family: variables.$font-primary;
+  font-weight: variables.$font-weight-bold;
+  font-size: variables.$font-size-heading-mobile;
+  line-height: 1;
+}
+
+// Mixin: Body text with bold emphasis (e.g. form confirmation)
+@mixin text-body-bold {
+  font-family: variables.$font-primary;
+  font-weight: variables.$font-weight-bold;
+  font-size: variables.$font-size-body;
+  line-height: 1.5;
+}
+
+// Mixin: Regular body text (e.g. form description, success message)
+@mixin text-body-regular {
+  font-family: variables.$font-primary;
+  font-weight: variables.$font-weight-regular;
+  font-size: variables.$font-size-body;
+  line-height: 1.5;
+}
+
+// Mixin: Small helper text (e.g. error messages)
+@mixin text-body-small {
+  font-family: variables.$font-primary;
+  font-weight: variables.$font-weight-regular;
+  font-size: variables.$font-size-small;
+  line-height: 1.5;
+}
+
+// ---------------------------------------------
+// MEDIA QUERY MIXIN
+// ---------------------------------------------
+
+// Mixin: Responsive breakpoint handler using $breakpoints map
+// Usage: @include respond(md) { ... }
+@mixin respond($breakpoint) {
+  @if map-has-key(variables.$breakpoints, $breakpoint) {
+    @media (max-width: map-get(variables.$breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "⚠️ Breakpoint '#{$breakpoint}' not found in $breakpoints map.";
+  }
+}
