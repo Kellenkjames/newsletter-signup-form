@@ -1,0 +1,70 @@
+@use '../abstracts/variables';
+
+// ---------------------------------------------
+// FLEXBOX UTILITIES
+// ---------------------------------------------
+
+// Map of common flexbox alignment values
+$flex-alignments: (
+  center: center,
+  start: flex-start,
+  end: flex-end,
+  between: space-between,
+  around: space-around,
+  evenly: space-evenly,
+);
+
+// Mixin: Create a flex row layout
+// --------------------------------
+// @param $justify: horizontal alignment (default: center)
+// @param $align: vertical alignment (default: center)
+// @param $wrap: flex-wrap behavior (default: wrap)
+// @param $gap: optional gap between items
+@mixin flex-row($justify: center, $align: center, $wrap: wrap, $gap: null) {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: $wrap;
+  justify-content: map-get($flex-alignments, $justify) or $justify;
+  align-items: map-get($flex-alignments, $align) or $align;
+
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+
+// Mixin: Create a flex column layout
+// ----------------------------------
+// @param $justify: vertical alignment (default: center)
+// @param $align: horizontal alignment (default: center)
+// @param $wrap: flex-wrap behavior (default: nowrap)
+// @param $gap: optional gap between items
+@mixin flex-column(
+  $justify: center,
+  $align: center,
+  $wrap: nowrap,
+  $gap: null
+) {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: $wrap;
+  justify-content: map-get($flex-alignments, $justify) or $justify;
+  align-items: map-get($flex-alignments, $align) or $align;
+
+  @if $gap != null {
+    gap: $gap;
+  }
+}
+
+// Mixin: Flex row layout centered on both axes
+// --------------------------------------------
+// A common shortcut for centering content
+@mixin flex-center {
+  @include flex-row(center, center);
+}
+
+// Mixin: Flex row with space-between and centered items
+// ------------------------------------------------------
+// Useful for layout spacing between two elements with vertical alignment
+@mixin space-between-center {
+  @include flex-row(between, center);
+}
