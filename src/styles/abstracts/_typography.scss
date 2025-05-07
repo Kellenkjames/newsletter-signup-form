@@ -1,0 +1,41 @@
+@use './variables';
+@use '../abstracts/fonts';
+
+// TYPOGRAPHY
+
+html {
+  font-size: 62.5%; // 1rem = 10px
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variables.$font-primary;
+  font-size: variables.$font-body;
+  font-weight: variables.$font-weight-regular;
+  background-color: variables.$color-bg;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: variables.$font-weight-bold;
+}
+
+// Paragraphs
+p {
+  margin: 0;
+}
+
+// Emphasis
+strong {
+  font-weight: variables.$font-weight-bold;
+}
+
+em {
+  font-style: italic;
+}
