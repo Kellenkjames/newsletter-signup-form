@@ -131,4 +131,8 @@ li {
   .container__image {
     order: 1;
   }
+}
+
+.content {
+  padding-block: 7.15rem;
 }/*# sourceMappingURL=main.css.map */

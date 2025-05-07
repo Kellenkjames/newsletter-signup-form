@@ -1,0 +1,11 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/utilities';
+
+// ---------------------------------------------
+// CONTENT (LEFT)
+// ---------------------------------------------
+
+.content {
+  padding-block: 7.15rem;
+}
