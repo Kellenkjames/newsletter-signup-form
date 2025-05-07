@@ -1,0 +1,41 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/utilities';
+
+// ---------------------------------------------
+// MAIN CONTAINER
+// ---------------------------------------------
+
+.container {
+  @include utilities.flex-row(center, center, nowrap);
+  gap: variables.$space-800;
+  margin-block: variables.$space-2200;
+  margin-inline: auto;
+  padding-block: variables.$space-300;
+  padding-inline: variables.$space-400;
+  background-color: variables.$white;
+  border-radius: variables.$border-radius-container;
+  max-width: 90.4rem;
+
+  @include mixins.respond(md) {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .content {
+    order: 1;
+
+    @include mixins.respond(md) {
+      order: 2; // content below image on mobile
+    }
+  }
+
+  &__image {
+    order: 2;
+    border-radius: variables.$border-radius-container;
+
+    @include mixins.respond(md) {
+      order: 1; // image moves above content on mobile
+    }
+  }
+}
