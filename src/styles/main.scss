@@ -2,29 +2,29 @@
 // ABSTRACTS
 // ---------------------------------------------
 
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
-@use 'abstracts/media';
+@use './abstracts/variables';
+@use './abstracts/fonts';
+@use './abstracts/mixins';
+@use './abstracts/typography';
+@use './abstracts/utilities';
 
 // ---------------------------------------------
 // BASE
 // ---------------------------------------------
 
-@use 'base/reset';
-@use 'base/fonts';
-@use 'base/typography';
+@use './base/base';
+@use './base/reset';
 
 // ---------------------------------------------
 // LAYOUT
 // ---------------------------------------------
 
-@use 'layout/layout';
+@use './layout/container';
 
 // ---------------------------------------------
 // COMPONENTS
 // ---------------------------------------------
 
-@use 'components/form';
-@use 'components/button';
-@use 'components/input';
-@use 'components/modal';
+@use './components/button';
+@use './components/modal';
+@use './components/text_input';
