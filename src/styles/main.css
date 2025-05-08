@@ -21,7 +21,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  background-color: #36384d;
+  color: #242742;
 }
 
 h1,
@@ -44,6 +44,24 @@ strong {
 
 em {
   font-style: italic;
+}
+
+body {
+  background-color: #36384d;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  border: 0;
+  padding: 0;
+  margin: 0;
 }
 
 *,
@@ -135,4 +153,54 @@ li {
 
 .content {
   padding-block: 7.15rem;
+}
+.content__heading-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 5.6rem;
+  line-height: 1;
+  margin-bottom: 3.2rem;
+}
+.content__heading-desc {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+.content__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 3.2rem;
+}
+.content__list-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.content__list-item:not(:last-child) {
+  margin-bottom: 0.8rem;
+}
+.content__form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.content__form .form-control {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.content__form .form-control label[for=emailField] {
+  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=main.css.map */

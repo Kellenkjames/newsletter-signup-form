@@ -3,9 +3,47 @@
 @use '../abstracts/utilities';
 
 // ---------------------------------------------
-// CONTENT (LEFT)
+// CONTENT (LEFT SIDE)
 // ---------------------------------------------
 
 .content {
   padding-block: 7.15rem;
+
+  &__heading {
+    &-title {
+      @include mixins.text-heading;
+      margin-bottom: variables.$space-400;
+    }
+
+    &-desc {
+      @include mixins.text-body-regular;
+      margin-bottom: variables.$space-400;
+    }
+  }
+
+  &__list {
+    @include utilities.flex-column(start, start, nowrap);
+    margin-bottom: variables.$space-400;
+
+    &-item {
+      @include utilities.flex-row;
+      gap: 1.5rem;
+
+      &:not(:last-child) {
+        margin-bottom: variables.$space-100;
+      }
+    }
+  }
+
+  &__form {
+    @include utilities.flex-column(start, start, nowrap);
+
+    .form-control {
+      @include utilities.flex-column(start, start, nowrap);
+
+      label[for='emailField'] {
+        margin-bottom: variables.$space-100;
+      }
+    }
+  }
 }
