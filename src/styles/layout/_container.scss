@@ -20,6 +20,11 @@
   @include mixins.respond(md) {
     flex-wrap: wrap;
     flex-direction: column;
+    gap: variables.$space-500;
+    margin-block: variables.$space-900;
+    padding: variables.$space-500;
+    max-width: 48rem;
+    width: 100%;
   }
 
   .content {
@@ -32,7 +37,10 @@
 
   &__image {
     order: 2;
-    border-radius: variables.$border-radius-container;
+
+    &-img {
+      border-radius: variables.$border-radius-container;
+    }
 
     @include mixins.respond(md) {
       order: 1; // image moves above content on mobile

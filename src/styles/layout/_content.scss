@@ -9,6 +9,10 @@
 .content {
   padding-block: 7.15rem;
 
+  @include mixins.respond(md) {
+    padding: 0;
+  }
+
   &__heading {
     &-title {
       @include mixins.text-heading;
