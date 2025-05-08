@@ -1,0 +1,21 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/utilities';
+
+// ---------------------------------------------
+// FORM CONTROl
+// ---------------------------------------------
+
+.form-control {
+  @include utilities.flex-column(start, start, nowrap);
+
+  label {
+    @include mixins.text-body-small;
+    font-weight: variables.$font-weight-bold;
+    margin-bottom: variables.$space-100;
+  }
+
+  input {
+    margin-bottom: variables.$space-300;
+  }
+}

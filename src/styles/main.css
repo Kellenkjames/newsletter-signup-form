@@ -183,6 +183,10 @@ li {
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
 }
 .content__list-item:not(:last-child) {
   margin-bottom: 0.8rem;
@@ -193,14 +197,4 @@ li {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
-}
-.content__form .form-control {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-}
-.content__form .form-control label[for=emailField] {
-  margin-bottom: 0.8rem;
 }/*# sourceMappingURL=main.css.map */

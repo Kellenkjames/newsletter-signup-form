@@ -27,7 +27,8 @@
 
     &-item {
       @include utilities.flex-row;
-      gap: 1.5rem;
+      gap: variables.$space-150;
+      @include mixins.text-body-regular;
 
       &:not(:last-child) {
         margin-bottom: variables.$space-100;
@@ -37,13 +38,5 @@
 
   &__form {
     @include utilities.flex-column(start, start, nowrap);
-
-    .form-control {
-      @include utilities.flex-column(start, start, nowrap);
-
-      label[for='emailField'] {
-        margin-bottom: variables.$space-100;
-      }
-    }
   }
 }
