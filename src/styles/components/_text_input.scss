@@ -1,0 +1,30 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/utilities';
+
+// ---------------------------------------------
+// TEXT INPUT
+// ---------------------------------------------
+
+.text-input {
+  width: 100%;
+  padding: variables.$space-200 variables.$space-300;
+  border: 1px solid variables.$grey;
+  border-radius: variables.$border-radius-input;
+  font-size: variables.$font-size-body;
+
+  &:focus {
+    outline: none;
+    border-color: variables.$blue-800;
+  }
+
+  &[aria-invalid='true'] {
+    border-color: variables.$color-error;
+    background-color: variables.$color-error-tint;
+  }
+
+  &::placeholder {
+    @include mixins.text-body-regular;
+    color: variables.$grey;
+  }
+}

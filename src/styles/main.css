@@ -197,4 +197,54 @@ li {
   flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+}
+
+.form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.form-control label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+}
+.form-control input {
+  margin-bottom: 2.4rem;
+}
+
+.text-input {
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  border: 1px solid #949494;
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+}
+.text-input:focus {
+  outline: none;
+  border-color: #242742;
+}
+.text-input[aria-invalid=true] {
+  border-color: #ff6155;
+  background-color: #ffe7e6;
+}
+.text-input::-moz-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #949494;
+}
+.text-input::placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color: #949494;
 }/*# sourceMappingURL=main.css.map */

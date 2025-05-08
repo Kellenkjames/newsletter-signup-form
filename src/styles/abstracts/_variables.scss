@@ -29,6 +29,7 @@ $color-text-secondary: $white;
 $color-btn-primary: $blue-800;
 $color-btn-hover: $red-gradient;
 $color-error: $red;
+$color-error-tint: #ffe7e6;
 
 // SPACING SCALE
 $space-0: 0;
@@ -48,6 +49,7 @@ $space-2200: 21.9rem; // 219px
 $box-shadow-card: 0px 15px 60px rgba(0, 0, 0, 0.25);
 
 // BORDER RADIUS
+$border-radius-input: 0.8rem;
 $border-radius-container: 3.6rem;
 
 // BREAKPOINTS
