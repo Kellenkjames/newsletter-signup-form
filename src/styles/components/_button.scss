@@ -1,0 +1,30 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+@use '../abstracts/utilities';
+
+// ---------------------------------------------
+// BUTTON
+// ---------------------------------------------
+
+.button {
+  @include mixins.text-body-bold;
+  width: 100%;
+  padding: variables.$space-200 variables.$space-300;
+  border-radius: variables.$border-radius-input;
+  border: none;
+  color: variables.$color-text-secondary;
+  cursor: pointer;
+
+  // Gradient reveal setup
+  background-color: variables.$color-bg;
+  background-image: linear-gradient(to right, #ff6a3a 0%, #ff527b 100%);
+  background-size: 0% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-size: 100% 100%;
+  }
+}

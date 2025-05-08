@@ -219,6 +219,28 @@ li {
   margin-bottom: 2.4rem;
 }
 
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  width: 100%;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.8rem;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  background-color: #36384d;
+  background-image: linear-gradient(to right, #ff6a3a 0%, #ff527b 100%);
+  background-size: 0% 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease-in-out;
+}
+.button:hover, .button:focus {
+  background-size: 100% 100%;
+}
+
 .text-input {
   width: 100%;
   padding: 1.6rem 2.4rem;
