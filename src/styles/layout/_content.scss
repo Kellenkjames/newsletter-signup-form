@@ -13,6 +13,10 @@
     padding: 0;
   }
 
+  @include mixins.respond(sm) {
+    padding: 1rem 3rem 4rem;
+  }
+
   &__heading {
     &-title {
       @include mixins.text-heading;
@@ -30,7 +34,7 @@
     margin-bottom: variables.$space-400;
 
     &-item {
-      @include utilities.flex-row;
+      @include utilities.flex-row(start, center, nowrap);
       gap: variables.$space-150;
       @include mixins.text-body-regular;
 

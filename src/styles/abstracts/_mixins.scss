@@ -20,7 +20,7 @@
 @mixin text-body-bold {
   font-family: variables.$font-primary;
   font-weight: variables.$font-weight-bold;
-  font-size: variables.$font-size-body;
+  font-size: clamp(1.4rem, 1.5vw, variables.$font-size-body);
   line-height: 1.5;
 }
 
@@ -28,7 +28,7 @@
 @mixin text-body-regular {
   font-family: variables.$font-primary;
   font-weight: variables.$font-weight-regular;
-  font-size: variables.$font-size-body;
+  font-size: clamp(1.4rem, 1.5vw, variables.$font-size-body);
   line-height: 1.5;
 }
 
@@ -36,7 +36,7 @@
 @mixin text-body-small {
   font-family: variables.$font-primary;
   font-weight: variables.$font-weight-regular;
-  font-size: variables.$font-size-small;
+  font-size: clamp(1.2rem, 1vw, variables.$font-size-small);
   line-height: 1.5;
 }
 

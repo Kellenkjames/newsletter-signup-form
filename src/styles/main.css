@@ -140,7 +140,10 @@ li {
 }
 @media (max-width: 500px) {
   .container {
-    max-width: 45rem;
+    max-width: 37rem;
+    padding: 0;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 .container .content {
@@ -161,6 +164,12 @@ li {
      object-fit: cover;
   border-radius: 3.6rem;
 }
+@media (max-width: 500px) {
+  .container__image-img {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
 @media (max-width: 800px) {
   .container__image {
     order: 1;
@@ -175,6 +184,11 @@ li {
     padding: 0;
   }
 }
+@media (max-width: 500px) {
+  .content {
+    padding: 1rem 3rem 4rem;
+  }
+}
 .content__heading-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -185,7 +199,7 @@ li {
 .content__heading-desc {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   line-height: 1.5;
   margin-bottom: 3.2rem;
 }
@@ -200,13 +214,13 @@ li {
 .content__list-item {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: center;
   gap: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   line-height: 1.5;
 }
 .content__list-item:not(:last-child) {
@@ -231,7 +245,7 @@ li {
 .form-control label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: clamp(1.2rem, 1vw, 1.2rem);
   line-height: 1.5;
   font-weight: 700;
   margin-bottom: 0.8rem;
@@ -243,7 +257,7 @@ li {
 .button {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   line-height: 1.5;
   width: 100%;
   padding: 1.6rem 2.4rem;
@@ -280,14 +294,14 @@ li {
 .text-input::-moz-placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   line-height: 1.5;
   color: #949494;
 }
 .text-input::placeholder {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: clamp(1.4rem, 1.5vw, 1.6rem);
   line-height: 1.5;
   color: #949494;
 }/*# sourceMappingURL=main.css.map */
