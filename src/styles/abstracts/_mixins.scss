@@ -8,15 +8,11 @@
 @mixin text-heading {
   font-family: variables.$font-primary;
   font-weight: variables.$font-weight-bold;
-  font-size: variables.$font-size-heading-desktop;
-  line-height: 1;
-}
-
-// Mixin: Mobile heading style override
-@mixin text-heading-lg {
-  font-family: variables.$font-primary;
-  font-weight: variables.$font-weight-bold;
-  font-size: variables.$font-size-heading-mobile;
+  font-size: clamp(
+    variables.$font-size-heading-mobile,
+    4vw,
+    variables.$font-size-heading-desktop
+  );
   line-height: 1;
 }
 
