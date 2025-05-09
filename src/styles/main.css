@@ -192,7 +192,7 @@ li {
 .content__heading-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
-  font-size: clamp(3.2rem, 4vw, 5.6rem);
+  font-size: clamp(2.8rem, 4vw, 5.6rem);
   line-height: 1;
   margin-bottom: 3.2rem;
 }
@@ -245,7 +245,7 @@ li {
 .form-control label {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  font-size: clamp(1.2rem, 1vw, 1.2rem);
+  font-size: clamp(1.2rem, 1vw, 1.4rem);
   line-height: 1.5;
   font-weight: 700;
   margin-bottom: 0.8rem;
