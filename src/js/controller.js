@@ -27,3 +27,17 @@ const handleSubmit = e => {
 
 button.addEventListener('click', handleSubmit);
 form.dismissBtn.addEventListener('click', () => form.hideModal());
+
+// Handling additional keyboard events
+document.addEventListener('keydown', e => {
+  // Submit form on Enter
+  if (e.key === 'Enter' && document.activeElement === form.emailInput) {
+    handleSubmit(e);
+  }
+
+  // Dismiss modal on Escape
+  if (e.key === 'Escape' && state.isModalOpen) {
+    form.hideModal();
+    state.isModalOpen = false;
+  }
+});
