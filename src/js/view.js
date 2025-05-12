@@ -1,5 +1,6 @@
 export default class formView {
   constructor() {
+    this.container = document.querySelector('.container');
     this.modal = document.querySelector('.modal');
     this.successMessage = this.modal.querySelector('.modal__message');
     this.form = document.querySelector('.content__form');
@@ -10,10 +11,12 @@ export default class formView {
 
   showModal() {
     this.modal.classList.add('open');
+    this.container.classList.add('hidden');
   }
 
   hideModal() {
     this.modal.classList.remove('open');
+    this.container.classList.remove('hidden');
   }
 
   showError(message) {

@@ -17,6 +17,10 @@
   border-radius: variables.$border-radius-container;
   max-width: 90.4rem;
 
+  &.hidden {
+    display: none;
+  }
+
   @include mixins.respond(md) {
     flex-wrap: wrap;
     flex-direction: column;

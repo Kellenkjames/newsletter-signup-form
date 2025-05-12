@@ -127,6 +127,9 @@ li {
   border-radius: 3.6rem;
   max-width: 90.4rem;
 }
+.container.hidden {
+  display: none;
+}
 @media (max-width: 800px) {
   .container {
     flex-wrap: wrap;
