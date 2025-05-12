@@ -247,13 +247,26 @@ li {
   justify-content: flex-start;
   align-items: flex-start;
 }
-.form-control label {
+.form-control .labels {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 0.8rem;
+}
+.form-control .labels .error-message {
+  color: #ff6155;
+}
+.form-control label,
+.form-control span {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: clamp(1.2rem, 1vw, 1.4rem);
   line-height: 1.5;
   font-weight: 700;
-  margin-bottom: 0.8rem;
 }
 .form-control input {
   margin-bottom: 2.4rem;

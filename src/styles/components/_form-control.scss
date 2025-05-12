@@ -10,10 +10,21 @@
   width: 100%;
   @include utilities.flex-column(start, start, nowrap);
 
-  label {
+  .labels {
+    width: 100%;
+    @include utilities.space-between-center;
+    flex-wrap: nowrap;
+    margin-bottom: variables.$space-100;
+
+    .error-message {
+      color: variables.$red;
+    }
+  }
+
+  label,
+  span {
     @include mixins.text-body-small;
     font-weight: variables.$font-weight-bold;
-    margin-bottom: variables.$space-100;
   }
 
   input {

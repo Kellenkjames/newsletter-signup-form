@@ -58,7 +58,12 @@
 
         <form class="content__form" data-form-state="valid" novalidate>
           <div class="form-control">
-            <label for="emailField">Email address</label>
+            <div class="labels">
+              <label class="default-message" for="emailField"
+                >Email address</label
+              >
+              <span class="error-message" aria-live="polite"></span>
+            </div>
             <input
               class="text-input"
               type="email"
@@ -67,7 +72,6 @@
               aria-invalid="false"
               placeholder="email@company.com"
             />
-            <span class="error-message" aria-live="polite"></span>
           </div>
           <button class="content__form-button button" type="button">
             Subscribe to monthly newsletter
@@ -107,5 +111,6 @@
         <button class="modal__button button">Dismiss message</button>
       </div>
     </div>
+    <script type="module" src="./src/js/main.js"></script>
   </body>
 </html>
