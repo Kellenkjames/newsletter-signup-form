@@ -16,7 +16,6 @@
   background-color: variables.$white;
   border-radius: variables.$border-radius-container;
   max-width: 90.4rem;
-  display: none; // temp styling for modal
 
   @include mixins.respond(md) {
     flex-wrap: wrap;

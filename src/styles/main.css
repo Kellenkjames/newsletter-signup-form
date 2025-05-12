@@ -126,7 +126,6 @@ li {
   background-color: #fff;
   border-radius: 3.6rem;
   max-width: 90.4rem;
-  display: none;
 }
 @media (max-width: 800px) {
   .container {
@@ -294,8 +293,8 @@ li {
   align-items: center;
   z-index: 1000;
   /* Add a fade-in animation */
-  opacity: 1;
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
 }
 .modal.open {
