@@ -46,6 +46,12 @@ em {
   font-style: italic;
 }
 
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: #36384d;
   -webkit-font-smoothing: antialiased;
@@ -119,7 +125,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 6.4rem;
-  margin-block: 21.9rem;
+  margin-block: 21.9rem 3.2rem;
   margin-inline: auto;
   padding-block: 2.4rem;
   padding-inline: 3.2rem;

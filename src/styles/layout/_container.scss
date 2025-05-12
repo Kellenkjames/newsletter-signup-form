@@ -9,7 +9,7 @@
 .container {
   @include utilities.flex-row(center, center, nowrap);
   gap: variables.$space-800;
-  margin-block: variables.$space-2200;
+  margin-block: variables.$space-2200 variables.$space-400;
   margin-inline: auto;
   padding-block: variables.$space-300;
   padding-inline: variables.$space-400;

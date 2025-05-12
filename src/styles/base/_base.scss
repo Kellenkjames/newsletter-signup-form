@@ -5,6 +5,12 @@
 // BASE
 // ---------------------------------------------
 
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
 body {
   background-color: variables.$color-bg;
   -webkit-font-smoothing: antialiased;
