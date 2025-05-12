@@ -41,6 +41,10 @@
       &:not(:last-child) {
         margin-bottom: variables.$space-100;
       }
+
+      @include mixins.respond(sm) {
+        align-items: flex-start;
+      }
     }
   }
 

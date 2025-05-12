@@ -162,7 +162,7 @@ li {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 3.6rem;
+  border-radius: 1.6rem;
 }
 @media (max-width: 500px) {
   .container__image-img {
@@ -225,6 +225,11 @@ li {
 }
 .content__list-item:not(:last-child) {
   margin-bottom: 0.8rem;
+}
+@media (max-width: 500px) {
+  .content__list-item {
+    align-items: flex-start;
+  }
 }
 .content__form {
   display: flex;
