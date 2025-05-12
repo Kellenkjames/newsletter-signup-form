@@ -126,6 +126,7 @@ li {
   background-color: #fff;
   border-radius: 3.6rem;
   max-width: 90.4rem;
+  display: none;
 }
 @media (max-width: 800px) {
   .container {
@@ -293,16 +294,9 @@ li {
   align-items: center;
   z-index: 1000;
   /* Add a fade-in animation */
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
-}
-@media (max-width: 500px) {
-  .modal .modal__content {
-    padding-inline: 3.2rem;
-    padding-block: 4rem;
-    max-width: 90%;
-  }
 }
 .modal.open {
   opacity: 1;
@@ -325,11 +319,26 @@ li {
   border-radius: 3.6rem;
   max-width: 50.4rem;
 }
+@media (max-width: 500px) {
+  .modal__content {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    margin-block: 0;
+    padding-block: 14.9rem 7rem;
+    padding-inline: 2.4rem;
+  }
+}
 .modal__title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: clamp(2.8rem, 4vw, 5.6rem);
   line-height: 1;
+}
+@media (max-width: 500px) {
+  .modal__button {
+    margin-top: 26.3rem;
+  }
 }
 
 .text-input {

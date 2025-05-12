@@ -19,17 +19,9 @@
   z-index: 1000;
 
   /* Add a fade-in animation */
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   transition: opacity 0.3s ease-in-out, visibility 0s linear 0.3s;
-
-  @include mixins.respond(sm) {
-    .modal__content {
-      padding-inline: variables.$space-400;
-      padding-block: variables.$space-500;
-      max-width: 90%;
-    }
-  }
 
   &.open {
     opacity: 1;
@@ -48,9 +40,25 @@
     background-color: variables.$white;
     border-radius: variables.$border-radius-container;
     max-width: variables.$modal-max-width;
+
+    @include mixins.respond(sm) {
+      border-radius: 0;
+      height: 100%;
+      width: 100%;
+      margin-block: 0;
+      padding-block: variables.$modal-padding-top-mobile
+        variables.$modal-padding-bottom-mobile;
+      padding-inline: variables.$space-300;
+    }
   }
 
   &__title {
     @include mixins.text-heading;
+  }
+
+  &__button {
+    @include mixins.respond(sm) {
+      margin-top: variables.$modal-button-margin-top-mobile;
+    }
   }
 }
