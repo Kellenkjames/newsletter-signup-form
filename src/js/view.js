@@ -3,28 +3,26 @@
  * Handles all DOM updates and UI feedback logic.
  */
 export default class formView {
-  constructor() {
-    /** @type {HTMLElement} The main layout container */
-    this.container = document.querySelector('.container');
+  /** @type {HTMLElement} The main layout container */
+  container = document.querySelector('.container');
 
-    /** @type {HTMLElement} The modal element */
-    this.modal = document.querySelector('.modal');
+  /** @type {HTMLElement} The modal element */
+  modal = document.querySelector('.modal');
 
-    /** @type {HTMLElement} The element showing the success email */
-    this.successMessage = this.modal.querySelector('.modal__message');
+  /** @type {HTMLElement} The element showing the success email */
+  successMessage = this.modal.querySelector('.modal__message');
 
-    /** @type {HTMLFormElement} The form element */
-    this.form = document.querySelector('.content__form');
+  /** @type {HTMLFormElement} The form element */
+  form = document.querySelector('.content__form');
 
-    /** @type {HTMLInputElement} The email input field */
-    this.emailInput = document.getElementById('emailField');
+  /** @type {HTMLInputElement} The email input field */
+  emailInput = document.getElementById('emailField');
 
-    /** @type {HTMLElement} The error message container */
-    this.errorMessage = document.querySelector('.error-message');
+  /** @type {HTMLElement} The error message container */
+  errorMessage = document.querySelector('.error-message');
 
-    /** @type {HTMLButtonElement} The dismiss button inside the modal */
-    this.dismissBtn = document.querySelector('.modal__button');
-  }
+  /** @type {HTMLButtonElement} The dismiss button inside the modal */
+  dismissBtn = document.querySelector('.modal__button');
 
   /** Displays the modal and hides the main container */
   showModal() {
